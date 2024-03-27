@@ -1,0 +1,198 @@
+~<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+    </style>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Prompt", sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .main {
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+      nav {
+        height: 60px;
+        width: 100%;
+        /*border-bottom: 2px solid black;*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Prompt", sans-serif;
+        font-weight: 800;
+      }
+      nav .logo {
+        font-size: 30px;
+        padding: 50px;
+      }
+      nav .mis {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      nav .mis ul {
+        display: flex;
+        list-style: none;
+        gap: 2vw;
+        align-items: center;
+        padding: 50px;
+      }
+      nav .mis .ri-menu-3-line {
+        display: none;
+      }
+      .content {
+        height: calc(100% - 60px);
+        width: 100%;
+        display: flex;
+        position: relative;
+      }
+      .left {
+        height: 100%;
+        width: 50%; 
+        padding: 7vw 5vw;
+      }
+      .left h1{
+        font-size: 4vw;
+      }
+      .right {
+        height: 100%;
+        width: 50%;
+        background: blanchedalmond;
+      }
+      .left span {
+        color:#00DFC0;
+      }
+      .content .left p {
+        font-size: 1.2vw;
+        margin-top: 3vw;
+        margin-bottom: 4vw;
+      }
+      .content .left button{
+        font-size: 1.2vw;
+        padding: 1.3vw 2.3vw;
+        background: #00DFC0;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .content .left button:hover{
+        background: #00DFC0;
+        border: none;
+      }
+      .content .right img{
+        height: 100%;
+        width: 100%;
+      }
+      nav .mis span button{
+        font-size: 1vw;
+        padding: 0.7vw 1.4vw;
+        background: #00DFC0;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      @media (max-width: 600px) {
+        nav {
+          color: white;
+          height: 60px;
+        }
+        nav .logo {
+          color: black;
+          font-size: 20px;
+          padding: 0 7vw;
+        }
+        nav .mis ul li {
+          display: none;
+        }
+        nav .mis .ri-menu-3-line {
+          display: block;
+          color: black;
+          font-size: 4.5vw;
+          padding: 4vw 3vw;
+        }
+        nav .mis button{
+          display: none;
+        }
+        .content{
+          height: calc(100% - 60px);
+          display: flex;
+          flex-direction: column;
+        }
+        .left{
+          width: 100%;
+          height: 50%;
+        }
+        .right{
+          width: 100%;
+          height: 50%;
+        }
+        .content .left h1{
+          font-size: 8vw;
+        }
+        .content .left p{
+          font-size: 4vw;
+        }
+        .content .left button{
+          font-size: 4vw;
+          font-weight: 800;
+          padding: 2vw 3vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="mis">
+          <ul>
+            <li>Store</li>
+            <li>Courses</li>
+            <li>Career</li>
+            <li>Blog</li>
+            <li>Account</li>
+          </ul>
+          <span><button>Sign In</button></span>
+          <span><i class="ri-menu-3-line"></i></span>
+         
+        </div>
+      </nav>
+      <div class="content">
+        <div class="left">
+          <h1>Always keeping the <span>Godlike</span> Personality</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            voluptatem fugiat, labore quaerat quos veniam! Deserunt odio impedit
+            dolorum ex illo repudiandae molestias, quas natus eveniet nihil sint
+            cum. Veritatis, hic!
+          </p>
+          <button>Explore Now</button>
+        </div>
+        <div class="right">
+          <img src="./3426526.jpg">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
